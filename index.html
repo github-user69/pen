@@ -59,10 +59,11 @@
         var password = document.getElementById('password').value;
         
         if (username === 'admin' && password === 'admin') {
-            alert('Login successful!');
-            document.getElementById('message').innerText = '';
+            console.log('yes');
+            document.getElementById('message').innerText = 'yes';
         } else {
-            document.getElementById('message').innerText = 'Invalid username or password.';
+            console.log('no');
+            document.getElementById('message').innerText = 'no';
         }
     });
 </script>
